@@ -1,12 +1,15 @@
 {
-  "name": "electron-webpack-quick-start",
+  "name": "quick-start",
+  "description": "Badge count test",
+  "author": "Peter Uithoven <peter@peteruithoven.nl>",
+  "desktopName": "quick-start",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "dev": "electron-webpack dev",
     "compile": "electron-webpack",
-    "dist": "yarn compile && electron-builder",
-    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
+    "dist": "npm run compile && electron-builder",
+    "dist:dir": "npm run dist --dir -c.compression=store -c.mac.identity=null"
   },
   "dependencies": {
     "source-map-support": "^0.5.10"
@@ -16,5 +19,14 @@
     "electron-builder": "20.38.4",
     "electron-webpack": "^2.6.2",
     "webpack": "4.28.4"
+  },
+  "build": {
+    "appId": "quick-start",
+    "productName": "quick-start",
+    "linux": {
+      "target": "deb"
+    },
+    "deb": {
+    }
   }
 }
