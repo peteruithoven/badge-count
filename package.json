@@ -2,7 +2,7 @@
   "name": "quick-start",
   "description": "Badge count test",
   "author": "Peter Uithoven <peter@peteruithoven.nl>",
-  "desktopName": "quick-start",
+  "desktopName": "quick-start.desktop",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
