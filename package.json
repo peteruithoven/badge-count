@@ -24,7 +24,7 @@
     "appId": "quick-start",
     "productName": "quick-start",
     "linux": {
-      "target": "deb"
+      "target": ["deb", "appImage"]
     },
     "deb": {
     }
