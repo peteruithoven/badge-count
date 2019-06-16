@@ -13,8 +13,8 @@ function createMainWindow() {
   const window = new BrowserWindow()
 
   const success = app.setBadgeCount(5);
-  console.log('success: ', success);
-  console.log('app.getBadgeCount(): ', app.getBadgeCount());
+  console.log('success:', success);
+  console.log('app.getBadgeCount():', app.getBadgeCount());
 
   if (isDevelopment) {
     window.webContents.openDevTools()
